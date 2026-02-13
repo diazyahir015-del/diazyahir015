@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | DC Nexus Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPB+Us9Q4v0k6D3R6fM4m7Vn5a5D5Q8lWUEAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dashboard-page">
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="index.html"><i class="fa-solid fa-bolt"></i> DC Nexus Pro</a>
+      <button id="logoutBtn" class="btn btn-outline">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container cards-grid">
+      <article class="card dashboard-highlight">
+        <h1>Bienvenido, <span id="userName">Usuario</span></h1>
+        <p>Tu cuenta está activa y lista para operar.</p>
+      </article>
+
+      <article class="card">
+        <h3><i class="fa-solid fa-layer-group"></i> Estado de servicios</h3>
+        <p>Sistema operativo y disponible para nuevas solicitudes.</p>
+      </article>
+
+      <article class="card">
+        <h3><i class="fa-solid fa-phone-volume"></i> Contacto rápido</h3>
+        <p>Para soporte personalizado, escríbenos por WhatsApp.</p>
+        <a class="btn btn-whatsapp" href="https://wa.me/524498394179" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i> Abrir WhatsApp
+        </a>
+      </article>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

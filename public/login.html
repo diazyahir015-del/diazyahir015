@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar sesión | DC Nexus Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPB+Us9Q4v0k6D3R6fM4m7Vn5a5D5Q8lWUEAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="auth-page">
+  <main class="auth-container">
+    <a class="brand auth-brand" href="index.html"><i class="fa-solid fa-bolt"></i> DC Nexus Pro</a>
+    <form id="loginForm" class="card auth-card">
+      <h1>Iniciar sesión</h1>
+      <p>Accede para ver tu panel de negocio.</p>
+
+      <label for="email">Correo electrónico</label>
+      <input id="email" name="email" type="email" required placeholder="tu-correo@empresa.com" />
+
+      <label for="password">Contraseña</label>
+      <input id="password" name="password" type="password" required placeholder="******" />
+
+      <button type="submit" class="btn btn-primary">Entrar</button>
+      <p class="form-message" id="loginMessage"></p>
+      <p class="helper-text">¿No tienes cuenta? <a href="register.html">Regístrate aquí</a>.</p>
+    </form>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

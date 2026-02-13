@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Documento | DC Nexus Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPB+Us9Q4v0k6D3R6fM4m7Vn5a5D5Q8lWUEAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="form-page">
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="index.html"><i class="fa-solid fa-bolt"></i> DC Nexus Pro</a>
+      <a class="btn btn-outline" href="index.html#documentos">Volver a documentos</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container form-layout">
+      <aside class="card form-aside">
+        <p class="eyebrow">TRÁMITE SELECCIONADO</p>
+        <h2 id="docTitle">Documento</h2>
+        <p id="docDescription">Completa la información solicitada para continuar.</p>
+        <ul class="check-list">
+          <li><i class="fa-solid fa-check"></i> Datos personales completos</li>
+          <li><i class="fa-solid fa-check"></i> Información de contacto actualizada</li>
+          <li><i class="fa-solid fa-check"></i> Confirmación antes de enviar</li>
+        </ul>
+      </aside>
+
+      <section class="card">
+        <h1>Formulario de solicitud</h1>
+        <p class="section-lead">Ingresa los datos requeridos para procesar tu solicitud.</p>
+
+        <form id="documentForm" class="doc-form">
+          <div class="form-grid">
+            <div>
+              <label for="fullName">Nombre(s) y apellidos</label>
+              <input id="fullName" name="fullName" type="text" required />
+            </div>
+            <div>
+              <label for="birthDate">Fecha de nacimiento</label>
+              <input id="birthDate" name="birthDate" type="date" required />
+            </div>
+            <div>
+              <label for="state">Estado</label>
+              <input id="state" name="state" type="text" required />
+            </div>
+            <div>
+              <label for="municipality">Municipio</label>
+              <input id="municipality" name="municipality" type="text" required />
+            </div>
+            <div>
+              <label for="phone">Teléfono</label>
+              <input id="phone" name="phone" type="tel" required placeholder="10 dígitos" />
+            </div>
+            <div>
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+          </div>
+
+          <div id="specificFields" class="form-grid"></div>
+
+          <div>
+            <label for="notes">Notas adicionales</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Comparte cualquier dato extra útil para tu trámite."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+          <p id="docFormMessage" class="form-message"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
