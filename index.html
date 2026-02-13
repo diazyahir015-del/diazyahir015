@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Díaz y Ahir | Documentos, Registros y Cobros</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-top">
+        <p class="tag">Díaz y Ahir</p>
+        <a
+          class="whatsapp-button"
+          href="https://wa.me/5210000000000"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Contactar por WhatsApp</a
+        >
+      </div>
+      <h1>Control profesional de documentos, ventas y cobros</h1>
+      <p class="hero-text">
+        Plataforma base para centralizar documentos de productos, registrar
+        operaciones y llevar seguimiento de cobros en un solo lugar.
+      </p>
+      <div class="stats-grid">
+        <article class="stat-card">
+          <p>Documentos cargados</p>
+          <strong>128</strong>
+        </article>
+        <article class="stat-card">
+          <p>Ventas del mes</p>
+          <strong>$248,900 MXN</strong>
+        </article>
+        <article class="stat-card">
+          <p>Cobros pendientes</p>
+          <strong>$41,300 MXN</strong>
+        </article>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="card">
+        <div class="card-title">
+          <h2>Documentos de productos</h2>
+          <span>Última actualización: hoy</span>
+        </div>
+        <div class="documents-grid">
+          <article>
+            <h3>Ficha técnica - Producto A</h3>
+            <p>Especificaciones, medidas y recomendaciones.</p>
+            <a href="#">Ver PDF</a>
+          </article>
+          <article>
+            <h3>Lista de precios vigente</h3>
+            <p>Versionado por fecha con historial de cambios.</p>
+            <a href="#">Ver PDF</a>
+          </article>
+          <article>
+            <h3>Términos de entrega y garantía</h3>
+            <p>Políticas de envío, cobertura y reclamaciones.</p>
+            <a href="#">Ver PDF</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-title">
+          <h2>Registro de venta / cobro</h2>
+          <span>Formulario interno</span>
+        </div>
+        <form class="form-grid">
+          <label>
+            Cliente
+            <input type="text" name="cliente" placeholder="Nombre o empresa" />
+          </label>
+          <label>
+            Producto / Documento
+            <input type="text" name="producto" placeholder="Ej. Producto A" />
+          </label>
+          <label>
+            Tipo de operación
+            <select name="tipo">
+              <option>Venta</option>
+              <option>Cobro</option>
+              <option>Abono</option>
+            </select>
+          </label>
+          <label>
+            Monto (MXN)
+            <input type="number" name="monto" placeholder="0.00" />
+          </label>
+          <label>
+            Método de pago
+            <select name="metodo">
+              <option>Transferencia</option>
+              <option>Efectivo</option>
+              <option>Tarjeta</option>
+            </select>
+          </label>
+          <label>
+            Fecha
+            <input type="date" name="fecha" />
+          </label>
+          <label class="full-width">
+            Notas
+            <textarea
+              name="notas"
+              rows="4"
+              placeholder="Detalles de la operación o documento relacionado"
+            ></textarea>
+          </label>
+          <button type="submit" class="primary-button">Guardar registro</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <div class="card-title">
+          <h2>Últimos movimientos</h2>
+          <span>Vista rápida</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Folio</th>
+                <th>Cliente</th>
+                <th>Tipo</th>
+                <th>Monto</th>
+                <th>Estatus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>V-2401</td>
+                <td>Distribuidora Norte</td>
+                <td>Venta</td>
+                <td>$18,500</td>
+                <td><span class="status paid">Pagado</span></td>
+              </tr>
+              <tr>
+                <td>C-984</td>
+                <td>Comercial Luna</td>
+                <td>Cobro</td>
+                <td>$7,200</td>
+                <td><span class="status pending">Pendiente</span></td>
+              </tr>
+              <tr>
+                <td>V-2398</td>
+                <td>Grupo Delta</td>
+                <td>Venta</td>
+                <td>$12,900</td>
+                <td><span class="status progress">En revisión</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
